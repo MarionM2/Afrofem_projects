@@ -1,0 +1,17 @@
+body {
+    color:black;
+    background-color:rgb(173, 146, 76);
+    font-family: Apple Chancery, cursive;
+    font-size: 1.3em;
+}
+h1 {
+    color:darkslategray;
+    text-decoration: underline;
+    font-family: cursive;
+
+}
+h2{
+    color:rgb(105, 37, 37);
+    text-decoration: underline;
+
+}

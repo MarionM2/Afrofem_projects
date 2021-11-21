@@ -3,13 +3,100 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>My test page</title>
+    <title>Marion_Afro-fem</title>
+    <link rel="stylesheet" href="./styles.css"/>
   </head>
   <body>
     <h1>What is CSS</h1>
-    <P>Like HTML, CSS is not a programming language. It's not a markup language either.
-       CSS is a style sheet language. CSS is what you use to selectively style HTML elements.
-       For example, this CSS selects paragraph text, setting the color to red</P>
+    <P>Like HTML is not a programming language. It's not a markup language either.
+       <strong>CSS is a style sheet language.</strong> CSS is what you use to selectively style HTML elements.
+       For example, this CSS selects paragraph text, setting the color to red:
+      <br>
+      <br>
+      <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7rgExJI10lsT_oZ2n12lDfIX5BhgWbjv9DQ&usqp=CAU"
+      width="300"
+      >
+    
+    </p>
+    <br>
+    <h2>Anatomy of a CSS ruleset</h2>
+      <p>Let's dissect the CSS code for red paragraph text to understand how it works :
+      <br>
+      <br>
+      <img
+      src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png"
+      width="300"
+      >
+      <br>
+      <br>
+
+      The whole structure is called a <strong>ruleset</strong>. (The term <em>ruleset</em> is often referred to as just <em>rule</em>.) Note the names of the individual parts: 
+      <br>
+      <br>
+      <strong>Selector</strong>
+      <br>
+      This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, elements). To style a different element, change the selector.
+      <br>
+      <br>
+      <strong>Declaration</strong>
+      <br>
+      This is a single rule like color: red;. It specifies which of the element's
+       <strong>properties</strong> you want to style.
+      <br>
+      <br>
+      <strong>Properties</strong>
+      <br>
+      These are ways in which you can style an HTML element.
+       (In this example, color is a property of the  elements.) In CSS, you choose which properties you want to affect in the rule.
+      <br>
+      <br>
+      <strong>Property value</strong>
+      
+      <br>
+      To the right of the property—after the colon—there is the property value.
+       This chooses one out of many possible appearances for a given property.
+      (For example, there are many color values in addition to red.)
+      <br>
+      <br>
+      Note the other important parts of the syntax:
+      <br>
+      <br>
+      <ul>
+        <li>Apart from the selector, each ruleset must be wrapped in curly braces. ({})</li>
+      <li>Within each declaration, you must use a colon (:) to separate the property from its value or values.</li>
+      <li>Within each ruleset, you must use a semicolon (;) to separate each declaration from the next one.</li>
+    </ul>
+      <br>
+      To modify multiple property values in one ruleset, write them separated by semicolons, like this:
+      <br>
+      p {<br>
+        color: red;
+        <br>
+        width: 500px;
+        <br>
+        border: 1px solid black;<br>
+      }
+      <br>
+      Selecting multiple elements
+      <br>
+      <br>
+      You can also select multiple elements and apply a single ruleset to all of them. Separate multiple selectors by commas. For example:
+      <br>
+      <br>
+      p, li, h1 {<br>
+        color: red;<br>
+      }
+
+    </p>
+    <h2>Conclusion</h2>
+    If you followed all the instructions in this article, you should have a page that looks similar to this one:
+    <br>
+    <img
+    src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/website-screenshot-final.png"
+    width="300">
+    
+    
 
   </body>
 </html>
